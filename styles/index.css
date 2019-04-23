@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/* TL CODE STARTS HERE */
+
+body {
+    transition: opacity .6s;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+h1 {
+    padding: 0 0 32px 0;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+hr {
+    margin: 16px 0;
+}
+
+input:focus, button {
+    outline: none;
+    border: 2px solid #bf5700;
+}
+
+.login {
+    display: block;
+    position: absolute;
+    top: 50%;
+    padding: 1vw;
+    background: rgba(0,0,0,0.75);
+    min-height: 25vh;
+    width: 8vw;
+    transition: all .6s;
+    transform: translateX(0) translateY(-50%);
+    overflow: hidden;
+}
+
+.hide {
+    transform: translateX(-100%) translateY(-40%);
+}
+
+.login__username-label, 
+.login__password-label {
+    display: block;
+    color: #fff;
+    padding: 8px;
+}
+
+.login__username-input, 
+.login__password-input,
+.login__username-input-register,
+.login__password-input-register {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 25px;
+    border: 2px solid #333f48;
+}
+
+.login__signin, 
+.login__singup, 
+.login__register {
+    display: block;
+    background: #bf5700;
+    border: none;
+    color: #fff;
+    padding: 8px 32px;
+    border-radius: 25px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    float: right;
+    border: 2px solid #bf5700;
+}
+
+.login__signin:hover, 
+.login__singup:hover, 
+.login__register:hover {
+    background: #333f48;
+    border: 2px solid #bf5700;
+}
+
+.login__singup-text {
+    color: #fff;
+    padding-bottom: 16px;
+}
+
+.login__singup {
+    background: rgba(0,0,0,0);
+    color: #fff;
+    border: 2px solid #bf5700;
+}
+
+.money {
+    position: absolute;
+    padding: 0.25vw;
+    color: #fff;
+    width: auto;
+    height: 8vw;
+    top: 5%;
+    right: 2%;
+    opacity: 0;
+    transition: all .6s;
+}
+
+.money__amount, 
+.money__amount-change {
+    display: block;
+    font-size: 3em;
+    color: white;
+    font-family: 'pricedownblack', Arial, Helvetica, sans-serif;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.money__amount-change {
+    display: block;
+    color: white;
+    opacity: 0;
+    transition: all .6s;
+    text-shadow: 0px 0px rgba(0,0,0,1);
+}
+
+.money__amount-change--negative {
+    opacity: 1;
+    text-shadow:
+       3px 3px 0 red,
+     -1px -1px 0 red,  
+      1px -1px 0 red,
+      -1px 1px 0 red,
+       1px 1px 0 red;
+
+}
+
+.money__amount-change--positive {
+    opacity: 1;
+    text-shadow:
+       3px 3px 0 darkgreen,
+     -1px -1px 0 darkgreen,  
+      1px -1px 0 darkgreen,
+      -1px 1px 0 darkgreen,
+       1px 1px 0 darkgreen;
+}
+
+.hidden {
+    display: none;
+}

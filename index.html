@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="fonts/pricedown/stylesheet.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="styles/index.css">
+
+
+<!-- Login UI / Scripts -->
+<div class="login center hide">
+    <div class="login__container">
+        <h1>Login</h1>
+        <form class="login__form">
+            <label class="login__username-label" for="username">Username</label>
+            <input class="login__username-input" type="text" name="username" required>
+            <label class="login__password-label" for="password">Password</label>
+            <input class="login__password-input" type="password" name="password" minlength="8" required>
+            <button type="button" class="login__signin">SIGN IN</button>
+        </form>
+        <div style="clear: both;"></div>
+        <hr>
+        <div class="login__singup-text"> Do you not have an account yet? <button type="button" class="login__singup go_to_signup">SIGN UP</button></div>
+    </div>
+    <div class="login__register-container hidden">
+            <h1>Signup</h1>
+            <form class="login__register-form">
+                <label class="login__username-label" for="username-register">Username</label>
+                <input class="login__username-input-register" type="text" name="username-register" required>
+                <label class="login__password-label" for="password-register">Password</label>
+                <input class="login__password-input-register" type="password" name="password-register" minlength="8" required>
+                <label class="login__password-label" for="confirmpassword-register">Confirm Password</label>
+                <input class="login__password-input" type="password" name="confirmpassword-register" minlength="8" required>
+                <button type="button" class="login__register">SIGN UP</button>
+            </form>
+            <div style="clear: both;"></div>
+            <hr>
+            <div class="login__singup-text"> Did you mean to sign in? <button type="button" class="login__singup go_to_login">SIGN IN</button></div>
+    </div>
+</div>
+<!-- Login UI / Scripts END -->
+
+<!-- Money UI / Scripts -->
+<div class="money">
+    <div class="money__amount">
+        $0
+    </div>
+    <div class="money__amount-change">
+     -$0
+    </div>
+</div>
+
+<!-- Money UI / Scripts END -->
+
+<script src="scripts/money.js"></script>
+<script src="scripts/login.js"></script>
